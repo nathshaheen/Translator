@@ -13,6 +13,7 @@
 		D88ABD5C28124F4700ED39DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88ABD5B28124F4700ED39DA /* Preview Assets.xcassets */; };
 		D88ABD6B28125B2B00ED39DA /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD6A28125B2A00ED39DA /* TextInputView.swift */; };
 		D88ABD6D28125B5300ED39DA /* TextOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD6C28125B5300ED39DA /* TextOutputView.swift */; };
+		D88ABD6F28125B7700ED39DA /* SegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D88ABD5B28124F4700ED39DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D88ABD6A28125B2A00ED39DA /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		D88ABD6C28125B5300ED39DA /* TextOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOutputView.swift; sourceTree = "<group>"; };
+		D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				D88ABD6A28125B2A00ED39DA /* TextInputView.swift */,
 				D88ABD6C28125B5300ED39DA /* TextOutputView.swift */,
+				D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				D88ABD6D28125B5300ED39DA /* TextOutputView.swift in Sources */,
 				D88ABD5728124F4600ED39DA /* ContentView.swift in Sources */,
 				D88ABD5528124F4600ED39DA /* TranslatorApp.swift in Sources */,
+				D88ABD6F28125B7700ED39DA /* SegmentControlView.swift in Sources */,
 				D88ABD6B28125B2B00ED39DA /* TextInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

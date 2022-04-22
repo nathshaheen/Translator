@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct TextInputView: View {
+    @State private var inputText = "Enter text"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextEditor(text: $inputText)
+            .foregroundColor(.secondary)
+            .padding()
     }
 }
 
