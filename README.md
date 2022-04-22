@@ -1,0 +1,2 @@
+# Translator
+iOS Translator project
