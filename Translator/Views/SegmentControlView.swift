@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct SegmentControlView: View {
+    @State private var currentTranslationView = "Text"
+    var translationViews = ["Text", "Image", "Dictation"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Picker("", selection: $currentTranslationView) {
+                ForEach(translationViews, id: \.self) {
+                    Text($0)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding()
+            
+            Text("Value: \(currentTranslationView)") // Debug
+        }
     }
 }
 
