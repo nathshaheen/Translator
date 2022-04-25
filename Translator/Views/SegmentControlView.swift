@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct SegmentControlView: View {
-    @State private var currentTranslationView = "Text"
-    var translationViews = ["Text", "Image", "Dictation"]
+    @State private var currentTranslationView = "character.cursor.ibeam"
+    var translationViews = ["character.cursor.ibeam", "photo", "waveform"]
     
     var body: some View {
         VStack {
             Picker("", selection: $currentTranslationView) {
                 ForEach(translationViews, id: \.self) {
-                    Text($0)
+                    Image(systemName: $0)
                 }
             }
             .pickerStyle(.segmented)
