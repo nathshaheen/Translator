@@ -10,8 +10,22 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         NavigationView {
-            Text("Settings tab")
-                .navigationTitle("Settings")
+            VStack {
+                Toggle(isOn: /*@PLACEHOLDER=Is On@*/.constant(true)) {
+                    Text("Dark mode")
+                }
+                .padding()
+                .background(Color.secondary)
+                .cornerRadius(10)
+                
+                Text("Author: Nathan Shaheen")
+                    .padding()
+                Text("Version: 0")
+                
+                Spacer()
+            }
+            .navigationTitle("Settings")
+            .padding()
         }
     }
 }
