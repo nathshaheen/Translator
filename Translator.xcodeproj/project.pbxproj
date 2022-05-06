@@ -17,6 +17,7 @@
 		D88ABD6B28125B2B00ED39DA /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD6A28125B2A00ED39DA /* TextInputView.swift */; };
 		D88ABD6D28125B5300ED39DA /* TextOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD6C28125B5300ED39DA /* TextOutputView.swift */; };
 		D88ABD6F28125B7700ED39DA /* SegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */; };
+		D8CB4D7B2824E79B00F1FEF9 /* IOListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB4D7A2824E79B00F1FEF9 /* IOListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D88ABD6A28125B2A00ED39DA /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		D88ABD6C28125B5300ED39DA /* TextOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOutputView.swift; sourceTree = "<group>"; };
 		D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlView.swift; sourceTree = "<group>"; };
+		D8CB4D7A2824E79B00F1FEF9 /* IOListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D84AEECB2816320C0080B27A /* LanguageSelectorView.swift */,
+				D8CB4D7A2824E79B00F1FEF9 /* IOListView.swift */,
 				D88ABD6A28125B2A00ED39DA /* TextInputView.swift */,
 				D88ABD6C28125B5300ED39DA /* TextOutputView.swift */,
 				D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */,
@@ -171,6 +174,7 @@
 				D84AEECC2816320C0080B27A /* LanguageSelectorView.swift in Sources */,
 				D88ABD6F28125B7700ED39DA /* SegmentControlView.swift in Sources */,
 				D88ABD6B28125B2B00ED39DA /* TextInputView.swift in Sources */,
+				D8CB4D7B2824E79B00F1FEF9 /* IOListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
