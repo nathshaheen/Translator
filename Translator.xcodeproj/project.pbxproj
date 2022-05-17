@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D84AEECC2816320C0080B27A /* LanguageSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84AEECB2816320C0080B27A /* LanguageSelectorView.swift */; };
+		D8545F822833A2D1006EC7D4 /* LanguageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8545F812833A2D1006EC7D4 /* LanguageSelectView.swift */; };
 		D866481B281BAC230029E728 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D866481A281BAC230029E728 /* SettingsView.swift */; };
 		D866481D281BAC4D0029E728 /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D866481C281BAC4D0029E728 /* TranslatorView.swift */; };
 		D88ABD5528124F4600ED39DA /* TranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABD5428124F4600ED39DA /* TranslatorApp.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		D84AEECB2816320C0080B27A /* LanguageSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorView.swift; sourceTree = "<group>"; };
+		D8545F812833A2D1006EC7D4 /* LanguageSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectView.swift; sourceTree = "<group>"; };
 		D866481A281BAC230029E728 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D866481C281BAC4D0029E728 /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
 		D88ABD5128124F4600ED39DA /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				D88ABD6C28125B5300ED39DA /* TextOutputView.swift */,
 				D88ABD6E28125B7700ED39DA /* SegmentControlView.swift */,
 				D866481A281BAC230029E728 /* SettingsView.swift */,
+				D8545F812833A2D1006EC7D4 /* LanguageSelectView.swift */,
 				D866481C281BAC4D0029E728 /* TranslatorView.swift */,
 				D8CB4D7C2824EF0B00F1FEF9 /* SegmentedControlNavBar.swift */,
 			);
@@ -170,6 +173,7 @@
 				D88ABD6D28125B5300ED39DA /* TextOutputView.swift in Sources */,
 				D88ABD5728124F4600ED39DA /* ContentView.swift in Sources */,
 				D8CB4D7D2824EF0B00F1FEF9 /* SegmentedControlNavBar.swift in Sources */,
+				D8545F822833A2D1006EC7D4 /* LanguageSelectView.swift in Sources */,
 				D88ABD5528124F4600ED39DA /* TranslatorApp.swift in Sources */,
 				D866481D281BAC4D0029E728 /* TranslatorView.swift in Sources */,
 				D84AEECC2816320C0080B27A /* LanguageSelectorView.swift in Sources */,
