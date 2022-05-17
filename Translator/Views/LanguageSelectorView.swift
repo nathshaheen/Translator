@@ -12,13 +12,17 @@ struct LanguageSelectorView: View {
         HStack {
             Spacer()
             
-            Text("Language 1")
-            
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            Button(action: {}, label: {Text("Language 1")}).onTapGesture {
+                print("L1")
             }
             
-            Text("Language 2")
+            Button(action: {}, label: {Text("Translate")}).onTapGesture {
+                print("Trans")
+            }
+            
+            Button(action: {}, label: {Text("Language 2")}).onTapGesture {
+                print("L2")
+            }
             
             Spacer()
         }
