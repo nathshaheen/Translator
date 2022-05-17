@@ -10,8 +10,20 @@ import SwiftUI
 struct TranslatorView: View {
     var body: some View {
         NavigationView {
-            Text("Translator tab")
-                .navigationTitle("Translator")
+            VStack {
+                List {
+                    Section {
+                        TextInputView()
+                        TextOutputView()
+                    }
+                                                            
+                    Section {
+                        LanguageSelectorView()
+                    }
+                }
+                .listStyle(InsetGroupedListStyle())
+            }
+            .navigationTitle("Translator")
         }
     }
 }

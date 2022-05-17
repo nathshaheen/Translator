@@ -10,6 +10,8 @@ import SwiftUI
 struct LanguageSelectorView: View {
     var body: some View {
         HStack {
+            Spacer()
+            
             Text("Language 1")
             
             Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
@@ -17,6 +19,8 @@ struct LanguageSelectorView: View {
             }
             
             Text("Language 2")
+            
+            Spacer()
         }
     }
 }

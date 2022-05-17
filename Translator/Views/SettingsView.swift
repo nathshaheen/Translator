@@ -11,16 +11,25 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: /*@PLACEHOLDER=Is On@*/.constant(true)) {
-                    Text("Dark mode")
+                Section {
+                    Toggle(isOn: /*@PLACEHOLDER=Is On@*/.constant(true)) {
+                        Text("Dark mode")
+                    }
+                } footer: {
+                    VStack() {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            VStack(spacing: 15) {
+                                Text("Author: Nathan Shaheen")
+                                Text("Version: 0")
+                            }
+                            Spacer()
+                        }
+                    }
                 }
-                
-                Text("Author: Nathan Shaheen")
-                
-                Text("Version: 0")
             }
             .navigationTitle("Settings")
-            .padding()
         }
     }
 }
