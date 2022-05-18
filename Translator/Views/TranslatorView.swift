@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct TranslatorView: View {
+    @State var input = "Enter text"
+    @State var output = ""
     var body: some View {
         NavigationView {
             VStack {
                 List {
                     Section {
-                        TextInputView()
-                        TextOutputView()
+                        TextInputView(inputText: $input)
+                        TextOutputView(outputText: $output)
                     }
                                                             
                     Section {
-                        LanguageSelectorView()
+                        LanguageSelectorView(input: $input, output: $output)
                     }
                 }
                 .listStyle(InsetGroupedListStyle())
@@ -28,8 +30,8 @@ struct TranslatorView: View {
     }
 }
 
-struct TranslatorView_Previews: PreviewProvider {
-    static var previews: some View {
-        TranslatorView()
-    }
-}
+//struct TranslatorView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TranslatorView()
+//    }
+//}

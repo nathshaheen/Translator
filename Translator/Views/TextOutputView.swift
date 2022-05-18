@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct TextOutputView: View {
+    @Binding var outputText: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(outputText)
             .foregroundColor(.secondary)
+            .padding()
     }
 }
 
-struct TextOutputView_Previews: PreviewProvider {
-    static var previews: some View {
-        TextOutputView()
-    }
-}
+//struct TextOutputView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TextOutputView()
+//    }
+//}

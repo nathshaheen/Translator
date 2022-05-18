@@ -7,8 +7,13 @@
 
 import SwiftUI
 
+import MLKit
+
 struct LanguageSelectorView: View {
     @State private var showingSheet = false
+    
+    @Binding var input: String
+    @Binding var output: String
     
     var body: some View {
         HStack {
@@ -24,7 +29,19 @@ struct LanguageSelectorView: View {
             
             Text("Translate")
             .onTapGesture {
-                print("Translating...")
+                let options = TranslatorOptions(sourceLanguage: .english, targetLanguage: .german)
+                let englishGermanTranslator = Translator.translator(options: options)
+
+                let conditions = ModelDownloadConditions(
+                    allowsCellularAccess: false,
+                    allowsBackgroundDownloading: true
+                )
+                englishGermanTranslator.downloadModelIfNeeded(with: conditions) { error in guard error == nil else { return }
+                }
+
+                englishGermanTranslator.translate(input) { translatedText, error in guard error == nil, let translatedText = translatedText else { return }
+                    output = translatedText
+                }
             }
             
             Spacer()
@@ -40,8 +57,8 @@ struct LanguageSelectorView: View {
     }
 }
 
-struct LanguageSelectorView_Previews: PreviewProvider {
-    static var previews: some View {
-        LanguageSelectorView()
-    }
-}
+//struct LanguageSelectorView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LanguageSelectorView()
+//    }
+//}

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TextInputView: View {
-    @State private var inputText = "Enter text"
+    @Binding var inputText: String
     
     var body: some View {
         TextEditor(text: $inputText)
@@ -17,8 +17,8 @@ struct TextInputView: View {
     }
 }
 
-struct TextInputView_Previews: PreviewProvider {
-    static var previews: some View {
-        TextInputView()
-    }
-}
+//struct TextInputView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TextInputView()
+//    }
+//}
