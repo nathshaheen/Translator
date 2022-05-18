@@ -8,25 +8,33 @@
 import SwiftUI
 
 struct LanguageSelectorView: View {
+    @State private var showingSheet = false
+    
     var body: some View {
         HStack {
             Text("Language 1")
             .onTapGesture {
-                print("L1")
+                showingSheet.toggle()
+            }
+            .sheet(isPresented: $showingSheet) {
+                LanguageSelectView()
             }
             
             Spacer()
             
             Text("Translate")
             .onTapGesture {
-                print("Trans")
+                print("Translating...")
             }
             
             Spacer()
             
             Text("Language 2")
             .onTapGesture {
-                print("L2")
+                showingSheet.toggle()
+            }
+            .sheet(isPresented: $showingSheet) {
+                LanguageSelectView()
             }
         }
     }
