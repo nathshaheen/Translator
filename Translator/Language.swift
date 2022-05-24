@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+import MLKit
+
+struct Language: Hashable {
+    var id: Int
+    var name: String
+    var languageIdentifier: TranslateLanguage
+}
