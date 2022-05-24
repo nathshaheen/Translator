@@ -54,7 +54,10 @@ struct LanguageTranslationView: View {
                     output = translatedText
                 }
             }
-                .padding()
+            .padding()
+            .background(.selection)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
             
             Spacer()
             
@@ -72,7 +75,7 @@ struct LanguageTranslationView: View {
             
             Spacer()
         }
-            .background(.white)
+            .background(.ultraThinMaterial)
             .cornerRadius(10)
             .padding()
     }

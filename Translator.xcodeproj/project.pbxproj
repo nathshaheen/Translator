@@ -58,6 +58,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D85BF03A283CDE01007866E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D85BF034283CDB69007866E7 /* Language.swift */,
+				D85BF036283CDB91007866E7 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D88ABD4828124F4600ED39DA = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +90,8 @@
 			children = (
 				D88ABD5428124F4600ED39DA /* TranslatorApp.swift */,
 				D88ABD5628124F4600ED39DA /* ContentView.swift */,
-				D85BF034283CDB69007866E7 /* Language.swift */,
-				D85BF036283CDB91007866E7 /* ModelData.swift */,
-				D85BF038283CDBA1007866E7 /* ImagePicker.swift */,
 				D88ABD632812531900ED39DA /* Views */,
+				D85BF03A283CDE01007866E7 /* Model */,
 				D88ABD5828124F4700ED39DA /* Assets.xcassets */,
 				D88ABD5A28124F4700ED39DA /* Preview Content */,
 			);
@@ -105,6 +112,7 @@
 				D85BF02E283CDB3D007866E7 /* TextTranslationView.swift */,
 				D85BF030283CDB4A007866E7 /* ImageTranslationView.swift */,
 				D85BF032283CDB5A007866E7 /* LanguageTranslationView.swift */,
+				D85BF038283CDBA1007866E7 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

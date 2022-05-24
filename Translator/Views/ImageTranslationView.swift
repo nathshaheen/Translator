@@ -23,7 +23,7 @@ struct ImageTranslationView: View {
             VStack {
                 Rectangle()
                     .frame(height: 0)
-                    .background(.white)
+                    .background(.ultraThinMaterial)
                 
                 ZStack {
                     image?
@@ -45,10 +45,12 @@ struct ImageTranslationView: View {
                 Divider()
                 
                 ScrollView {
-                    Text(" " + translatedText)
+                    Text(translatedText)
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
+                        .padding(5)
                 }
                     .frame(maxWidth: .infinity, maxHeight: ContentView.screenHeight * 0.25, alignment: .topLeading)
-                    .background(.white)
+                    .background(.ultraThinMaterial)
                     .cornerRadius(10)
                     .padding()
                 
@@ -58,9 +60,8 @@ struct ImageTranslationView: View {
                 
                 Rectangle()
                     .frame(height: 0)
-                    .background(.white)
+                    .background(.ultraThinMaterial)
             }
-            .background(.ultraThinMaterial)
             .navigationTitle("Image Translation")
             .onChange(of: inputImage) { _ in loadImage() }
         }
