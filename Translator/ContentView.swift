@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    static let screenHeight = UIScreen.main.bounds.height
+    
     var body: some View {
         TabView {
+            TextTranslationView()
+                .tabItem {
+                    Label("Text", systemImage: "character.cursor.ibeam")
+                }
+            
+            ImageTranslationView()
+                .tabItem {
+                    Label("Image", systemImage: "photo")
+                }
         }
     }
 }
