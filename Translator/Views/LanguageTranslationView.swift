@@ -13,8 +13,8 @@ struct LanguageTranslationView: View {
     @Binding var input: String
     @Binding var output: String
     
-    @State var inputLanguageIdentifier: Int = 1
-    @State var outputLanguageIdentifier: Int = 2
+    @State var inputLanguageIdentifier: Int = 3
+    @State var outputLanguageIdentifier: Int = 0
     
     @State var showInputLanguageSheet = false
     @State var showOutputLanguageSheet = false

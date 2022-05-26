@@ -34,7 +34,7 @@ struct ImageTranslationView: View {
                     .frame(maxWidth: .infinity, maxHeight: ContentView.screenHeight * 0.25, alignment: .center)
                     .padding(.horizontal)
                 
-                Label("Image", systemImage: "photo")
+                Label("Select Image", systemImage: "photo.on.rectangle.angled")
                     .onTapGesture {
                         showImagePicker = true
                     }
