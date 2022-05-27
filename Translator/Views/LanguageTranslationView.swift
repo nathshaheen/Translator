@@ -23,10 +23,11 @@ struct LanguageTranslationView: View {
         HStack {
             Spacer()
             
+            // Source lanuage selection
             Button(languages[inputLanguageIdentifier].name) {
                 showInputLanguageSheet.toggle()
             }
-            .sheet(isPresented: $showInputLanguageSheet) {
+            .sheet(isPresented: $showInputLanguageSheet) {  // Show list of languages
                 List(languages, id: \.self) { language in
                     Button(language.name) {
                         inputLanguageIdentifier = language.id
@@ -37,11 +38,13 @@ struct LanguageTranslationView: View {
             
             Spacer()
             
+            // Translate text
             Button("Translate") {
+                // Setup Translator
                 let options = TranslatorOptions(sourceLanguage: languages[inputLanguageIdentifier].languageIdentifier, targetLanguage: languages[outputLanguageIdentifier].languageIdentifier)
-                
                 let translator = Translator.translator(options: options)
 
+                // Download languages if required
                 let conditions = ModelDownloadConditions(
                     allowsCellularAccess: false,
                     allowsBackgroundDownloading: true
@@ -49,8 +52,8 @@ struct LanguageTranslationView: View {
                 translator.downloadModelIfNeeded(with: conditions) { error in guard error == nil else { return }
                 }
 
+                // Translate text
                 translator.translate(input) { translatedText, error in guard error == nil, let translatedText = translatedText else { return }
-                    print("TRANSLATE", output)
                     output = translatedText
                 }
             }
@@ -61,10 +64,11 @@ struct LanguageTranslationView: View {
             
             Spacer()
             
+            // Target lanuage selection
             Button(languages[outputLanguageIdentifier].name) {
                 showOutputLanguageSheet.toggle()
             }
-            .sheet(isPresented: $showOutputLanguageSheet) {
+            .sheet(isPresented: $showOutputLanguageSheet) { // Show list of languages
                 List(languages, id: \.self) { language in
                     Button(language.name) {
                         outputLanguageIdentifier = language.id
